@@ -22,9 +22,9 @@ noise_level = st.sidebar.slider("Sensor Noise Level", 0.1, 1.0, 0.2, 0.1)
 
 if st.sidebar.button("Run Telemetry & AI Diagnosis"):
     with st.spinner("Processing sensor telemetry and running Isolation Forest model..."):
-        # Generate synthetic telemetry data
+        # Generate synthetic telemetry data using lowercase 'h' for pandas compatibility
         np.random.seed(42)
-        time = pd.date_range(start="2026-01-01", periods=n_samples, freq="H")
+        time = pd.date_range(start="2026-01-01", periods=n_samples, freq="h")
         load_mw = np.random.normal(45.0, 5.0, n_samples)
         top_oil_temp = 0.6 * load_mw + np.random.normal(25.0, 2.0, n_samples)
         vibration = np.random.normal(1.2, noise_level, n_samples)
