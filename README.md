@@ -25,6 +25,15 @@ As power grids experience higher stress from renewable integration and fluctuati
 
 ---
 
+## 📈 Visualizations & Analytical Reports
+
+The platform automatically generates and logs comprehensive diagnostic visualizations and structured reports inside the `outputs/` directory:
+
+* **`substation Asset Health Monitor.png` & `telemetry_chart.png`:** High-resolution matplotlib visualization charts mapping top-oil temperature time-series against isolation forest anomaly predictions to instantly identify thermal spikes and mechanical vibrations.
+* **`asset_health_report.csv` & `asset_health_report.xlsx`:** Tabular exports containing complete telemetry logs, operational parameters, and anomaly flags for auditing and offline maintenance reporting.
+
+---
+
 ## 📊 Live Dashboard Preview
 
 Access the live application deployed on Streamlit Cloud:  
