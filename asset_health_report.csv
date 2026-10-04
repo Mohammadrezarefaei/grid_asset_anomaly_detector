@@ -1,0 +1,4 @@
+Timestamp,Asset_ID,Status,Score
+2026-10-04 10:00,TR_01,Normal,0.12
+2026-10-04 11:00,TR_01,Warning,0.89
+2026-10-04 12:00,TR_01,Normal,0.15
