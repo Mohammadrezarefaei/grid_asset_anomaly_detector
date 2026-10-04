@@ -32,11 +32,20 @@ The platform automatically generates and logs comprehensive diagnostic visualiza
 * **`substation Asset Health Monitor.png` & `telemetry_chart.png`:** High-resolution matplotlib visualization charts mapping top-oil temperature time-series against isolation forest anomaly predictions to instantly identify thermal spikes and mechanical vibrations.
 * **`asset_health_report.csv` & `asset_health_report.xlsx`:** Tabular exports containing complete telemetry logs, operational parameters, and anomaly flags for auditing and offline maintenance reporting.
 
-### 🖼️ Preview of Visualizations & Tables
+### 🖼️ Preview of Visualizations
 
 | Diagnostic Plot (`substation Asset Health Monitor.png`) | Telemetry Trend (`telemetry_chart.png`) |
 | :---: | :---: |
 | ![Asset Health Monitor](outputs/substation%20Asset%20Health%20Monitor.png) | ![Telemetry Chart](outputs/telemetry_chart.png) |
+
+### 📋 Sample Analytical Data Table (`asset_health_report.csv` & `asset_health_report.xlsx`)
+
+| Timestamp | Load (MW) | Top-Oil Temp (°C) | Vibration (mm/s) | Status / Anomaly Flag |
+| :--- | :---: | :---: | :---: | :---: |
+| `2026-01-01 10:00:00` | 45.2 | 52.1 | 1.15 | Normal (0) |
+| `2026-01-01 11:00:00` | 48.6 | 55.4 | 1.20 | Normal (0) |
+| `2026-01-01 12:00:00` | 51.0 | 88.5 | 4.65 | **Anomaly / Fault (1)** |
+| `2026-01-01 13:00:00` | 44.8 | 51.8 | 1.12 | Normal (0) |
 
 ---
 
