@@ -37,12 +37,16 @@ Access the live application deployed on Streamlit Cloud:
 ```text
 grid_asset_anomaly_detector/
 ├── database/
-│   └── anomaly_db_logger.py     # SQLite telemetry and anomaly logging module
+│   └── anomaly_db_logger.py         # SQLite telemetry and anomaly logging module
 ├── notebooks/
 │   └── grid_asset_anomaly_detector.ipynb # Jupyter notebook for AI model prototyping
-├── output/                      # Auto-saved analytical plots and reports
+├── outputs/                         # Analytical reports and auto-saved plots
+│   ├── asset_health_report.csv      # Exported CSV report of asset health logs
+│   ├── asset_health_report.xlsx     # Exported Excel spreadsheet of analytical findings
+│   ├── substation Asset Health Monitor.png # Visual health monitoring chart
+│   └── telemetry_chart.png          # Telemetry and temperature anomaly plot
 ├── tests/
-│   └── test_anomaly_detector.py # Pytest unit tests for database and logging
-├── app.py                       # Interactive Streamlit monitoring dashboard
-├── requirements.txt             # Project Python dependencies
-└── README.md                    # Project documentation
+│   └── test_anomaly_detector.py     # Pytest unit tests for database and logging
+├── app.py                           # Interactive Streamlit monitoring dashboard
+├── requirements.txt                 # Project Python dependencies
+└── README.md                        # Project documentation
